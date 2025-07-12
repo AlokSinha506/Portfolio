@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Hamburger menu (mobile only) -->
+  <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+  <!-- Layout Wrapper -->
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">Alok Sinha</div>
+      <ul class="menu">
+        <li class="menu-item active"><a href="#home"><img src="./assets/home-svgrepo-com.svg">Home</a></li>
+        <li class="menu-item"><a href="#about"><img src="./assets/boy-man-user-svgrepo-com.svg">About Me</a></li>
+        <li class="menu-item"><a href="#experience"><img src="./assets/briefcase-svgrepo-com (1).svg">Experience</a></li>
+        <li class="menu-item"><a href="#projects"><img src="./assets/tools-svgrepo-com.svg">Projects</a></li>
+        <li class="menu-item"><a href="#skills"><img src="./assets/code-svgrepo-com.svg">Skills</a></li>
+        <li class="menu-item"><a href="#hobbies"><img src="./assets/music-note-2-svgrepo-com.svg">Hobbies</a></li>
+        <li class="menu-item"><a href="#contact"><img src="./assets/email-essential-letter-svgrepo-com.svg">Contact</a></li>
+        <li class="menu-item"><a href="./assets/alok_resume.pdf" target="_blank"><img src="./assets/download-minimalistic-svgrepo-com.svg">Resume</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+
+      <header class="main-header">
+  <div class="mobile-logo">Alok Sinha</div>
+  <nav class="nav-links">
+    
+    <a href="#home" class="story-item active" data-tab="Home">
+      <div class="story-border">
+        <img src="./assets/home-svgrepo-com.svg" alt="Home Icon" />
+      </div>
+      <span>Home</span>
+    </a>
+
+    <a href="#about" class="story-item active" data-tab="About">
+      <div class="story-border">
+        <img src="./assets/boy-man-user-svgrepo-com.svg" alt="About Icon" />
+      </div>
+      <span>About</span>
+    </a>
+
+    <a href="#projects" class="story-item active" data-tab="Projects">
+      <div class="story-border">
+        <img src="./assets/tools-svgrepo-com.svg" alt="Projects Icon" />
+      </div>
+      <span>Projects</span>
+    </a>
+
+    <a href="#contact" class="story-item active" data-tab="Contact">
+      <div class="story-border">
+        <img src="./assets/message-square-notification-svgrepo-com.svg" alt="Contact Icon" />
+      </div>
+      <span>Contact</span>
+    </a>
+
+  </nav>
+</header>
+
+
+        <section class="home-section" id="home">
+        <div class="home-left">
+            <img src="./assets/alok_profile.jpg" alt="Alok Sinha" class="profile-pic">
+        </div>
+
+        <div class="home-right">
+            <h1>Hi, I'm Alok Sinha👋</h1>
+            <h2>Full Stack Java Developer & Data Analyst</h2>
+            <p>
+            I’m a passionate software engineer with a love for building high-performance web applications. My expertise spans Java, Spring Boot, React, and cloud-native technologies.
+            </p>
+            <p>
+            I believe in clean code, consistent learning, and creating digital products that make a difference. From crafting intuitive UIs to optimizing APIs, I enjoy solving real-world problems with code.
+            </p>
+
+            <div class="social-links">
+            <a href="https://www.linkedin.com/in/aloksinha506/" target="_blank">
+                <img src="./assets/linkedin-svgrepo-com.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/aloksinha506" target="_blank">
+                <img src="./assets/github-142-svgrepo-com.svg" alt="GitHub">
+            </a>
+            <a href="https://instagram.com/aloksinha.dev" target="_blank">
+                <img src="./assets/instagram-1-svgrepo-com.svg" alt="Instagram">
+            </a>
+            </div>
+        </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+    <h2>About Me</h2>
+    <p>
+        Hey there! I'm Alok Sinha, a full stack developer who enjoys building clean and scalable backend systems and beautiful frontends. With experience across utilities and tech, I bring both depth and curiosity to my work.
+    </p>
+    <p>
+        I specialize in Java, Spring Boot, and REST APIs, and I’m equally comfortable working with modern frontend stacks. Whether it’s debugging production bugs or designing new features, I thrive in solving real-world problems through code.
+    </p>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+  <section class="education-section" id="education">
+    <h2>Education</h2>
+    <div class="education-card first-education-card">
+      <img src="./assets/asu-logo.png" alt="ASU Logo" class="edu-logo" />
+      <div class="edu-info">
+        <h3>Arizona State University</h3>
+        <p>Master of Science in Information Technology</p>
+       
+      </div>
+    </div>
+    <div class="education-card">
+      <img src="./assets/bit-logo.png" alt="ASU Logo" class="edu-logo" />
+      <div class="edu-info">
+        <h3>Bhilai Institute of Technology</h3>
+        <p>Bachelor of Engineering in Electronics and Telecommunication</p>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience-section" id="experience">
+    <h2>Experience</h2>
+    <div class="experience-list">
+
+        <!-- Con Edison -->
+        <div class="experience-card" onclick="openModal('modal-conedison')">
+        <img src="./assets/con-Edison.png" alt="Con Edison">
+        <div>
+            <h3>Computer Aide</h3>
+            <span class="duration">Jun 2024 – Dec 2024</span>
+        </div>
+        </div>
+
+        <!-- TCS -->
+        <div class="experience-card" onclick="openModal('modal-tcs')">
+        <img src="./assets/tcs-logo.png" alt="TCS">
+        <div>
+            <h3>System Engineer</h3>
+            <span class="duration">Jan 2023 – Aug 2023</span>
+        </div>
+        </div>
+
+        <!-- ATMECS -->
+        <div class="experience-card" onclick="openModal('modal-atmecs')">
+        <img src="./assets/ATMECS_logo.png" alt="ATMECS">
+        <div>
+            <h3>Associate Software Engineer</h3>
+            <span class="duration">Jun 2020 – Dec 2022</span>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- MODALS -->
+    <!-- MODAL: Con Edison -->
+<div class="modal" id="modal-conedison">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-conedison')">&times;</span>
+    <img src="./assets/con-Edison.png" alt="Con Edison">
+    <h3>Computer Aide @ Con Edison</h3>
+    <p><strong>Duration:</strong> Jun 2024 - Dec 2024</p>
+    <ul>
+      <li>Automated IP network incident resolution using correlation tables, cutting response time by 20% (via ServiceNow analytics).</li>
+      <li>Built a SharePoint-based automation system with Power Automate for real-time tracking and task approvals.</li>
+      <li>Integrated Power BI dashboards with SharePoint and email alerts for executive visibility.</li>
+      <li>Collaborated within the IPIM team to optimize internal tools and operations.</li>
+      <li>Launched a live infrastructure status dashboard, reducing manual tickets by 30%.</li>
+      <li>Created DAX-powered Power BI reports to improve reporting speed and accuracy by 15%.</li>
+      <li>Enabled real-time engineering insights through live dashboards linked to SharePoint.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- MODAL: TCS -->
+<div class="modal" id="modal-tcs">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-tcs')">&times;</span>
+    <img src="./assets/tcs-logo.png" alt="TCS">
+    <h3>System Engineer @ Tata Consultancy Services</h3>
+    <p><strong>Duration:</strong> Jan 2023 - Aug 2023</p>
+    <ul>
+      <li>Developed and optimized 10+ Spring Boot microservices, reducing backend latency by 25% and enhancing system scalability.</li>
+      <li>Implemented 100+ unit and integration test cases using JUnit and Mockito, increasing overall code coverage by 35% and reducing post-deployment bugs by 40%.</li>
+      <li>Boosted API throughput by 30% through multithreading and asynchronous request handling for high-traffic modules.</li>
+      <li>Designed and documented scalable RESTful service contracts using OpenAPI (Swagger), improving team onboarding time by 20%.</li>
+      <li>Revamped logging and exception handling layers across all services, cutting incident resolution time by 30% as measured via Kibana log metrics.</li>
+      <li>Enhanced CI/CD pipeline with Jenkins and GitHub Actions, decreasing deployment failures by 60% and deployment time by 40%.</li>
+      <li>Led RCA efforts on 15+ production issues, ensuring timely resolution and long-term system reliability improvements.</li>
+      <li>Built and deployed a full-stack admin portal used by 50+ internal users using Spring Boot (backend) and React (frontend), reducing manual effort by 70%.</li>
+      <li>Integrated third-party APIs including Stripe (payment processing) and Firebase (push notifications), enabling seamless enterprise-level interactions and reducing integration time by 40%.</li>
+</ul>
+  </div>
+</div>
+
+<!-- MODAL: ATMECS -->
+<div class="modal" id="modal-atmecs">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-atmecs')">&times;</span>
+    <img src="./assets/ATMECS_logo.png" alt="ATMECS">
+    <h3>Associate Software Engineer @ ATMECS Global</h3>
+    <p><strong>Duration:</strong> Jun 2020 - Dec 2022</p>
+    <ul>
+      <li>Built scalable services using Java, Spring Boot, GraphQL (DGS) for content delivery.</li>
+      <li>Improved responsiveness by 22% via optimized GraphQL APIs.</li>
+      <li>Led Angular frontend integration, boosting user experience.</li>
+      <li>Automated CI/CD with Jenkins & Docker, cutting deploy time by 40%.</li>
+      <li>Collaborated cross-functionally to align deliverables with business goals.</li>
+      <li>Reduced tech debt by 30% through code refactors for modularity.</li>
+      <li>Built secure financial services using Java, Hibernate, and JOOQ (30% DB performance gain).</li>
+      <li>Delivered REST APIs aligned with financial data security standards.</li>
+      <li>Mentored devs and reduced rework by 25% via quality guidance (GitLab metrics).</li>
+      <li>Contributed to architecture reviews, sprint planning, and timely feature delivery.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== PROJECTS SECTION ===== -->
+<section class="projects-section" id="projects">
+  <h2>Projects</h2>
+  <div class="project-cards">
+
+    <!-- Project 1: School Similarity Matching Model -->
+    <div class="project-card">
+      <img src="./assets/graduate-student-svgrepo-com.svg" alt="School Recommender" class="project-img">
+      <div class="project-info">
+        <h3>School Similarity Matching Model</h3>
+        <span class="project-date">Spring 2024</span>
+        <ul>
+          <li>Recommended schools using kNN & similarity scores</li>
+          <li>92% match accuracy; 70% reduction in search time</li>
+        </ul>
+        <button onclick="openModal('modal-project1')">See more</button>
+      </div>
+    </div>
+
+    <!-- Project 2: Sales Analytics Dashboard -->
+    <div class="project-card">
+      <img src="./assets/analytics-bussiness-finance-svgrepo-com.svg" alt="Sales Dashboard" class="project-img">
+      <div class="project-info">
+        <h3>Sales Analytics Dashboard</h3>
+        <span class="project-date">Spring 2024</span>
+        <ul>
+          <li>Visualized coffee chain data with Tableau & Power BI</li>
+          <li>Enabled actionable retail insights and KPIs</li>
+        </ul>
+        <button onclick="openModal('modal-project2')">See more</button>
+      </div>
+    </div>
+
+    <!-- Project 3: Secure Information System -->
+    <div class="project-card">
+      <img src="./assets/secure-shield-shield-svgrepo-com.svg" alt="Secure Info System" class="project-img">
+      <div class="project-info">
+        <h3>Secure Information Management System</h3>
+        <span class="project-date">Fall 2023</span>
+        <ul>
+          <li>Built a Spring Boot-based role-secure healthcare system</li>
+          <li>Used AES, JWT, and MFA for access & encryption</li>
+        </ul>
+        <button onclick="openModal('modal-project3')">See more</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ===== PROJECT MODALS ===== -->
+
+<!-- MODAL: Project 1 -->
+<div class="modal" id="modal-project1">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-project1')">&times;</span>
+    <img src="./assets/graduate-student-svgrepo-com.svg" alt="School Model" />
+    <h3>School Similarity Matching Model</h3>
+    <p><strong>Date:</strong> Spring 2024</p>
+    <ul>
+      <li>Built a machine learning recommender to suggest schools based on 1000+ profiles.</li>
+      <li>Used kNN, Cosine Similarity & Euclidean Distance to rank similar institutions.</li>
+      <li>Preprocessed data with MinMaxScaler; normalized features for fair matching.</li>
+      <li>Visualized clusters and differentiators using Matplotlib and Seaborn.</li>
+      <li>92% accuracy and 70% faster decision-making reported by parent feedback.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- MODAL: Project 2 -->
+<div class="modal" id="modal-project2">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-project2')">&times;</span>
+    <img src="./assets/analytics-bussiness-finance-svgrepo-com.svg" alt="Sales Analytics" />
+    <h3>Sales Analytics Dashboard for Coffee Chain</h3>
+    <p><strong>Date:</strong> Spring 2024</p>
+    <ul>
+      <li>Analyzed 10,000+ coffee chain transactions with Tableau, Power BI, and Python.</li>
+      <li>Cleaned and preprocessed data using Tableau Prep and Pandas for accuracy.</li>
+      <li>Created interactive dashboards with dynamic KPIs (revenue, product/category/time filters).</li>
+      <li>Helped simulate 10% sales growth and 15% inventory optimization.</li>
+      <li>Improved reporting by 30% and enabled business visibility into peak hours and product trends.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- MODAL: Project 3 -->
+<div class="modal" id="modal-project3">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-project3')">&times;</span>
+    <img src="./assets/secure-shield-shield-svgrepo-com.svg" alt="Secure Info System" />
+    <h3>Secure Information Management System</h3>
+    <p><strong>Date:</strong> Fall 2023</p>
+    <ul>
+      <li>Designed a Spring Boot-based role-secure healthcare platform to manage sensitive patient-doctor data.</li>
+      <li>Applied AES-256 encryption, JWT auth, and data hashing for PII minimization and endpoint protection.</li>
+      <li>Integrated MFA and role-based API access for Admins, Doctors, and Patients.</li>
+      <li>RESTful APIs enabled secure registration, assignment, and reporting with GDPR/ISO compliance.</li>
+      <li>Achieved 100% mitigation of XSS/SQLi and 60% PII exposure reduction using OWASP & JMeter testing.</li>
+    </ul>
+  </div>
+</div>
+
+
+    <!-- ===== SKILLS SECTION ===== -->
+<section class="skills-section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-item">Java</div>
+    <div class="skill-item">Spring Boot</div>
+    <div class="skill-item">RESTful APIs</div>
+    <div class="skill-item">Microservices Architecture</div>
+    <div class="skill-item">AWS (Lambda, EC2, API Gateway, S3, RDS)</div>
+    <div class="skill-item">Docker</div>
+    <div class="skill-item">GitHub Actions / CI-CD</div>
+    <div class="skill-item">SQL (MySQL, PostgreSQL)</div>
+    <div class="skill-item">MongoDB</div>
+    <div class="skill-item">React.js</div>
+    <div class="skill-item">JavaScript</div>
+    <div class="skill-item">Power BI + DAX</div>
+    <div class="skill-item">SharePoint Automation (Power Automate)</div>
+    <div class="skill-item">Jenkins</div>
+    <div class="skill-item">JUnit & Mockito</div>
+    <div class="skill-item">Swagger / OpenAPI</div>
+    <div class="skill-item">OAuth 2.0 / JWT</div>
+    <div class="skill-item">Postman</div>
+    <div class="skill-item">Agile / Scrum</div>
+    <div class="skill-item">Linux (Shell/Bash)</div>
+    <div class="skill-item">Git</div>
+    <div class="skill-item">Terraform</div>
+    <div class="skill-item">ServiceNow</div>
+  </div>
+</section>
+
+<!-- ===== HOBBIES SECTION ===== -->
+<section class="hobbies-section" id="hobbies">
+  <h2>Hobbies</h2>
+  <div class="hobbies-grid">
+    <div class="hobby-item">
+      <img src="./assets/cooking-pot-svgrepo-com.svg" alt="Music">
+      <span>Cooking</span>
+    </div>
+    <div class="hobby-item">
+      <img src="./assets/reading-svgrepo-com.svg" alt="Reading">
+      <span>Reading</span>
+    </div>
+    <div class="hobby-item">
+      <img src="./assets/yoga-01-svgrepo-com.svg" alt="Photography">
+      <span>Yoga & Meditation</span>
+    </div>
+    <div class="hobby-item">
+      <img src="./assets/feather-and-ink-svgrepo-com.svg" alt="Yoga">
+      <span>Poetry</span>
+    </div>
+    <div class="hobby-item">
+      <img src="./assets/two-people-having-a-conversation-svgrepo-com.svg" alt="Coding">
+      <span>Meaningful Conversations</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+  <p>If you'd like to connect, collaborate, or just say hello - feel free to drop a message below!</p>
+
+  <form id="contactForm" class="contact-form">
+  <label>Full Name</label>
+  <input type="text" id="fullName" placeholder="Your name" required />
+
+  <label>Email Address</label>
+  <input type="email" id="email" placeholder="you@example.com" required />
+
+  <label>Message</label>
+  <textarea id="message" placeholder="Write your message..." required></textarea>
+
+  <button type="submit" id="submitBtn" disabled>Send Message</button>
+</form>
+</section>
+
+
+
+
+    </div>
+
+    <!-- Right Sidebar (Endorsements) -->
+    <aside class="right-sidebar">
+      <h3>Endorsements</h3>
+      <div class="endorsement">
+        <img src="./assets/woman-svgrepo-com.svg" alt="Endorser 1">
+        <div class="endorser-info">
+          <strong>Richa Singh</strong>
+          <span>Full Stack Developer | Financial Services Consultant | AI Enthusiast</span>
+          <p>Me and Alok were in the same team in ATMECS technology pvt ltd. 
+             One thing that I noticed was that Alok has the potential to work on the task assigned to him, whatever was thrown towards him he takes complete ownership of it, from attending meetings, 
+             to learning and dedication to complete the work within the given time frame.</p>
+        </div>
+      </div>
+
+    </aside>
+
+</div>
+<footer class="site-footer">
+<div class="footer-content">
+<p>&copy; 2025 Alok Sinha. Thanks for stopping by!</p>
+</div>
+</footer>
+<div class="contact-popup" id="contactPopup">
+  <span class="close-popup" onclick="closePopup()">&times;</span>
+  <p>Thank you! Alok has received your message.<br>He’ll reply shortly 😊</p>
+</div>
+
+
+
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("5dYoezu93OJliePRn"); // Public key
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // ===== Sidebar toggle for mobile =====
+  window.toggleSidebar = () => {
+    document.querySelector('.sidebar').classList.toggle('show');
+  };
+
+  // ===== Modal Logic =====
+  window.openModal = (id) => {
+    document.getElementById(id).style.display = 'block';
+  };
+
+  window.closeModal = (id) => {
+    document.getElementById(id).style.display = 'none';
+  };
+
+  // ===== Scroll-based section highlighting =====
+  const sections = document.querySelectorAll("section[id]");
+  const sidebarLinks = document.querySelectorAll('.sidebar a[href^="#"]');
+
+  const activateSidebarLink = (id) => {
+    document.querySelectorAll(".sidebar .menu-item").forEach(el => el.classList.remove("active"));
+    document.querySelectorAll(`.sidebar a[href="#${id}"]`).forEach(link => {
+      const parent = link.closest(".menu-item");
+      if (parent) parent.classList.add("active");
+    });
+  };
+
+  const onScroll = () => {
+    let current = "";
+    sections.forEach(section => {
+      if (window.scrollY >= section.offsetTop - 140) {
+        current = section.getAttribute("id");
+      }
+    });
+    if (current) activateSidebarLink(current);
+  };
+
+  window.addEventListener("scroll", onScroll);
+  onScroll();
+
+  sidebarLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      const id = link.getAttribute("href").substring(1);
+      activateSidebarLink(id);
+    });
+  });
+
+  // ===== Contact Form Logic =====
+  const form = document.getElementById('contactForm');
+  const nameInput = document.getElementById('fullName');
+  const emailInput = document.getElementById('email');
+  const messageInput = document.getElementById('message');
+  const submitBtn = document.getElementById('submitBtn');
+
+  const validateForm = () => {
+    const filled = nameInput.value.trim() && emailInput.value.trim() && messageInput.value.trim();
+    if (!submitBtn.dataset.sending) submitBtn.disabled = !filled;
+  };
+
+  [nameInput, emailInput, messageInput].forEach(input => {
+    input.addEventListener('input', validateForm);
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    submitBtn.disabled = true;
+    submitBtn.dataset.sending = "true";
+    submitBtn.textContent = "Sending...";
+
+    const params = {
+      fullName: nameInput.value,
+      email: emailInput.value,
+      message: messageInput.value,
+    };
+
+    emailjs
+      .send('service_nat5t6m', 'template_rbncxul', params)
+      .then(() => finishSend())
+      .catch(() => finishSend()); // Always call finishSend, even on error
+  });
+
+  function finishSend() {
+    showPopup();
+    form.reset();
+    submitBtn.textContent = "Send";
+    delete submitBtn.dataset.sending;
+
+    // Keep disabled until user types again
+    setTimeout(() => {
+      submitBtn.disabled = true;
+    }, 10000);
+  }
+
+  function showPopup() {
+    const popup = document.getElementById('contactPopup');
+    popup.style.display = 'block';
+    setTimeout(() => {
+      popup.style.display = 'none';
+    }, 10000);
+  }
+
+  window.closePopup = () => {
+    document.getElementById('contactPopup').style.display = 'none';
+    submitBtn.disabled = true;
+  };
+});
+</script>
+
+</body>
+</html>
